@@ -1,0 +1,105 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/6184ac86/
+COMMUNICATION_H	./communication.h	/^#define COMMUNICATION_H$/;"	d
+INVALID_SOCKET	./TCP_API.h	/^#define INVALID_SOCKET /;"	d
+INVALID_SOCKET	./UDP_API.h	/^#define INVALID_SOCKET /;"	d
+IN_ADDDR	./TCP_API.h	/^typedef struct in_addr IN_ADDDR;$/;"	t	typeref:struct:in_addr
+IN_ADDDR	./UDP_API.h	/^typedef struct in_addr IN_ADDDR;$/;"	t	typeref:struct:in_addr
+NbClient	./TCP_API.h	/^	unsigned int NbClient;$/;"	m	struct:client	typeref:typename:unsigned int
+Nmax	./TCP_API.h	/^	unsigned int Nmax;$/;"	m	struct:client	typeref:typename:unsigned int
+RP_settings	./TCP_API.h	/^    Settings *RP_settings;$/;"	m	struct:server_info	typeref:typename:Settings *
+SETTINGS_H	./settings.h	/^#define SETTINGS_H$/;"	d
+SOCKADDR	./TCP_API.h	/^typedef struct sockaddr SOCKADDR;$/;"	t	typeref:struct:sockaddr
+SOCKADDR	./UDP_API.h	/^typedef struct sockaddr SOCKADDR;$/;"	t	typeref:struct:sockaddr
+SOCKADDR_IN	./TCP_API.h	/^typedef struct sockaddr_in SOCKADDR_IN;$/;"	t	typeref:struct:sockaddr_in
+SOCKADDR_IN	./UDP_API.h	/^typedef struct sockaddr_in SOCKADDR_IN;$/;"	t	typeref:struct:sockaddr_in
+SOCKET	./TCP_API.h	/^typedef int SOCKET;$/;"	t	typeref:typename:int
+SOCKET	./UDP_API.h	/^typedef int SOCKET;$/;"	t	typeref:typename:int
+SOCKET_ERROR	./TCP_API.h	/^#define SOCKET_ERROR /;"	d
+SOCKET_ERROR	./UDP_API.h	/^#define SOCKET_ERROR /;"	d
+Settings	./settings.h	/^struct Settings$/;"	s
+Settings	./settings.h	/^typedef struct Settings Settings;$/;"	t	typeref:struct:Settings
+Settings_ID	./settings.h	/^enum Settings_ID$/;"	g
+Settings_ID	./settings.h	/^typedef enum Settings_ID Settings_ID;$/;"	t	typeref:enum:Settings_ID
+Settings_edit	./settings.c	/^void Settings_edit ( Settings *lSettings, Settings_ID ID, int value )$/;"	f	typeref:typename:void
+Settings_edit_from_TCP_buffer	./settings.c	/^void Settings_edit_from_TCP_buffer(Settings *lSettings, uint8_t *buff)$/;"	f	typeref:typename:void
+Settings_edit_number_of_point	./settings.c	/^void Settings_edit_number_of_point (Settings *lSettings, int value)$/;"	f	typeref:typename:void
+Settings_get_number_of_point	./settings.c	/^int Settings_get_number_of_point(Settings lSettings)$/;"	f	typeref:typename:int
+Settings_get_value	./settings.c	/^int Settings_get_value (Settings lSettings, Settings_ID ID)$/;"	f	typeref:typename:int
+Settings_init	./settings.c	/^void Settings_init(Settings *lSettings)$/;"	f	typeref:typename:void
+Settings_print	./settings.c	/^void Settings_print(Settings lSettings)$/;"	f	typeref:typename:void
+Settings_server_routine	./communication.c	/^void *Settings_server_routine(void *p_data)$/;"	f	typeref:typename:void *
+Settings_server_routine_thread	./communication.h	/^pthread_t Settings_server_routine_thread;$/;"	v	typeref:typename:pthread_t
+TCP_API_H	./TCP_API.h	/^#define TCP_API_H$/;"	d
+TCP_server_routine	./communication.c	/^void *TCP_server_routine(void* p_data)$/;"	f	typeref:typename:void *
+TCP_server_thread	./communication.h	/^pthread_t TCP_server_thread;$/;"	v	typeref:typename:pthread_t
+UDP_API_H	./UDP_API.h	/^#define UDP_API_H$/;"	d
+add_client	./TCP_API.c	/^void add_client(client* client_list, Settings *lsettings, SOCKET sock_server)$/;"	f	typeref:typename:void
+angle	./settings.h	/^    angle,$/;"	e	enum:Settings_ID
+clear_client	./TCP_API.c	/^void clear_client(client* client_list, unsigned int id)$/;"	f	typeref:typename:void
+clear_struct_client	./TCP_API.c	/^void clear_struct_client(client* client_list)$/;"	f	typeref:typename:void
+client	./TCP_API.h	/^struct client$/;"	s
+client	./TCP_API.h	/^typedef struct client client; \/\/structure that contained client informations$/;"	t	typeref:struct:client
+client_list	./TCP_API.h	/^	client* client_list;$/;"	m	struct:server_info	typeref:typename:client *
+close_TCP_client	./TCP_API.c	/^void close_TCP_client(SOCKET* sock)$/;"	f	typeref:typename:void
+close_TCP_server	./TCP_API.c	/^void close_TCP_server(SOCKET* sock, client* client_list)$/;"	f	typeref:typename:void
+close_TCP_server_simple	./TCP_API.c	/^void close_TCP_server_simple(SOCKET* sock, SOCKET *client)$/;"	f	typeref:typename:void
+close_UDP_client	./UDP_API.c	/^void close_UDP_client(SOCKET* sock)$/;"	f	typeref:typename:void
+close_UDP_server	./UDP_API.c	/^void close_UDP_server(SOCKET *server_socket)$/;"	f	typeref:typename:void
+closesocket	./TCP_API.h	/^#define closesocket(/;"	d
+closesocket	./UDP_API.h	/^#define closesocket(/;"	d
+compress_data	./UDP_API.c	/^void compress_data (uint16_t *RAW, uint16_t *comp, unsigned int Nraw) \/\/Nraw must be a multipl/;"	f	typeref:typename:void
+data	./settings.h	/^    uint8_t data[end];$/;"	m	struct:Settings	typeref:typename:uint8_t[]
+decimation	./settings.h	/^    decimation,$/;"	e	enum:Settings_ID
+delay	./settings.h	/^    delay,$/;"	e	enum:Settings_ID
+emulator	./settings.h	/^    emulator,$/;"	e	enum:Settings_ID
+end	./settings.h	/^    end$/;"	e	enum:Settings_ID
+extract_data	./UDP_API.c	/^void extract_data (uint16_t *RAW, uint16_t *comp, unsigned int Nraw)$/;"	f	typeref:typename:void
+id_client	./TCP_API.h	/^    unsigned int* id_client;$/;"	m	struct:client	typeref:typename:unsigned int *
+init_TCP_client	./TCP_API.c	/^int init_TCP_client(SOCKET* sock, const char* IP, int Port)$/;"	f	typeref:typename:int
+init_TCP_server	./TCP_API.c	/^int init_TCP_server(SOCKET* sock, int Port,client* client_list, unsigned int MaxClient)$/;"	f	typeref:typename:int
+init_TCP_server_simple	./TCP_API.c	/^int init_TCP_server_simple(SOCKET *server_socket, SOCKET *client_socket, SOCKADDR_IN *client_sin/;"	f	typeref:typename:int
+init_UDP_client	./UDP_API.c	/^void init_UDP_client(SOCKET* client_sock, SOCKADDR_IN *client_sin, char* IP, int PortUDP)$/;"	f	typeref:typename:void
+init_UDP_client2	./UDP_API.c	/^void init_UDP_client2(SOCKET* client_sock, SOCKADDR_IN *client_sin, char* IP, int PortUDP)$/;"	f	typeref:typename:void
+init_UDP_client3	./UDP_API.c	/^void init_UDP_client3(SOCKET* client_sock, SOCKADDR_IN *client_sin, int PortUDP)$/;"	f	typeref:typename:void
+init_UDP_server	./UDP_API.c	/^int init_UDP_server(SOCKET* server_sock, SOCKADDR_IN *client_sin, socklen_t *csock_size, int Por/;"	f	typeref:typename:int
+init_UDP_server_no_validation	./UDP_API.c	/^int init_UDP_server_no_validation(SOCKET* server_sock, SOCKADDR_IN *client_sin, int Port)$/;"	f	typeref:typename:int
+init_struct_client	./TCP_API.c	/^void init_struct_client(client* client_list, unsigned int Nmax)$/;"	f	typeref:typename:void
+int_converter	./TCP_API.c	/^int int_converter(char x)$/;"	f	typeref:typename:int
+launch_server	./communication.c	/^void launch_server(SOCKET* sock, client* client_list, Settings *nSettings)$/;"	f	typeref:typename:void
+launch_settings_comm	./communication.c	/^void launch_settings_comm(SOCKET *sock, client* client_list, Settings *nSettings)$/;"	f	typeref:typename:void
+main	./client.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+main	./server.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
+na	./settings.h	/^    na = 0,$/;"	e	enum:Settings_ID
+number_of_bit	./settings.h	/^    number_of_bit,$/;"	e	enum:Settings_ID
+number_of_line	./settings.h	/^    number_of_line,$/;"	e	enum:Settings_ID
+number_of_point_lsb	./settings.h	/^    number_of_point_lsb,$/;"	e	enum:Settings_ID
+number_of_point_msb	./settings.h	/^    number_of_point_msb,$/;"	e	enum:Settings_ID
+peek_TCP_client	./TCP_API.c	/^int peek_TCP_client(SOCKET* sock, int data_size)$/;"	f	typeref:typename:int
+ready	./settings.h	/^    ready, \/\/use for RedPitaya $/;"	e	enum:Settings_ID
+receive_TCP_client	./TCP_API.c	/^int receive_TCP_client(SOCKET* sock, char* buffer, int buff_length)$/;"	f	typeref:typename:int
+receive_TCP_server	./TCP_API.c	/^int receive_TCP_server(client* client_list, char* buffer, int buff_length, int target)$/;"	f	typeref:typename:int
+receive_int16_TCP_client	./TCP_API.c	/^int receive_int16_TCP_client(SOCKET* sock, int16_t *buffer, int buff_length)$/;"	f	typeref:typename:int
+receive_int16_TCP_server	./TCP_API.c	/^int receive_int16_TCP_server(client* client_list, uint16_t* buffer, int buff_length, int target)$/;"	f	typeref:typename:int
+send_TCP_client	./TCP_API.c	/^void send_TCP_client(SOCKET* sock, char* buffer, int buff_length)$/;"	f	typeref:typename:void
+send_TCP_server	./TCP_API.c	/^int send_TCP_server(client* client_list, char* buffer, int buff_length, int target)$/;"	f	typeref:typename:int
+send_int16_TCP_client	./TCP_API.c	/^void send_int16_TCP_client(SOCKET* sock, int16_t *buffer, int buff_length)$/;"	f	typeref:typename:void
+send_int16_TCP_server	./TCP_API.c	/^int send_int16_TCP_server(client* client_list, int16_t *buffer, int buff_length, int target)$/;"	f	typeref:typename:int
+server_info	./TCP_API.h	/^struct server_info$/;"	s
+server_info	./TCP_API.h	/^typedef struct server_info server_info; \/\/structure need to make thread with server routinr$/;"	t	typeref:struct:server_info
+settings_size	./settings.h	/^    settings_size, \/\/use to know automaticly number of settings$/;"	e	enum:Settings_ID
+simple_emulator	./communication.c	/^void simple_emulator(Settings *nSettings)$/;"	f	typeref:typename:void
+sin_client	./TCP_API.h	/^	SOCKADDR_IN* sin_client;$/;"	m	struct:client	typeref:typename:SOCKADDR_IN *
+sock	./TCP_API.h	/^	SOCKET sock;$/;"	m	struct:server_info	typeref:typename:SOCKET
+sock_client	./TCP_API.h	/^	SOCKET* sock_client;$/;"	m	struct:client	typeref:typename:SOCKET *
+start	./settings.h	/^    start,$/;"	e	enum:Settings_ID
+tcp_udp	./settings.h	/^    tcp_udp,$/;"	e	enum:Settings_ID
+tgc_end	./settings.h	/^    tgc_end,$/;"	e	enum:Settings_ID
+tgc_start	./settings.h	/^    tgc_start,$/;"	e	enum:Settings_ID
